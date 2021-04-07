@@ -1,0 +1,20 @@
+using System;
+
+namespace _04.Reverse_String
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = Console.ReadLine();
+
+            string goodJob = "";
+
+            for (int i = name.Length - 1; i >= 0; i--)
+            {
+                goodJob += name[i];
+            }
+            Console.WriteLine(goodJob);
+        }
+    }
+}
