@@ -1,0 +1,24 @@
+using System;
+
+namespace _01.Sort_Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
+
+            int wight = Math.Max(Math.Max(n1, n2), n3);
+            int height = Math.Min(Math.Min(n1, n2), n3);
+
+            int goodJob = (n1 + n2 + n3) - (wight + height);
+
+
+            Console.WriteLine(wight);
+            Console.WriteLine(goodJob);
+            Console.WriteLine(height);
+        }
+    }
+}
